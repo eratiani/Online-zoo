@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+.container__content{
+    width: 1160px;
+    max-width: 100%;
+    margin: auto;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    background: #000000;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+.header__logo--text {
+    width: 82px;
+    height: 52px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 23px;
+    margin-right: 63px;
+    /* or 23px */
+    display: flex;
+    flex-direction: column;
+    padding: 3.55px 4.75px;
+    text-align: center;
+    border: 1.18841px solid #FFFFFF; 
+}
+.header__logo--span {
+    position: relative;
+}
+.bamboo {
+    position: absolute;
+    top: -10%;
+    left: 5%;
+}
+.header__navigation--ul {
+    list-style: none;
+    display: flex;
+}
+.header__navigation--link {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 58px;
+    text-align: left;
+    /* letter-spacing: 0.8px; */
+}
+.header__link {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 22px */
+    text-decoration: none;
+    /* margin-right: 2px; */
+    /* letter-spacing: 0.8px; */
+    color: #FFFFFF;
+    margin-right: 2px;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo__container {
+    display: flex;
+    align-items: center;
+}
+.section__one {
+    height: 780px;
+    background-image: url(assets/images/Giant\ Panda.png);
+    
+    background-repeat: no-repeat;
+}
