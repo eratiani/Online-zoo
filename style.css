@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     position: fixed;
+    z-index: 2;
 }
 .header__logo--text {
     width: 82px;
@@ -87,6 +88,71 @@
 .section__one {
     height: 780px;
     background-image: url(assets/images/Giant\ Panda.png);
-    
+    width: 100%;
+    /* position: relative; */
+    background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle__block {
+    width: 465px;
+    position: absolute;
+    height: 465px;
+    border-radius: 50%;
+    top: 92px;
+    left: calc(50% - 465px/2 + 239.5px);
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+.section__one--text--wrapper {
+    /* position: absolute;
+    left: calc(50% - 500.31px/2 + 330.15px);
+    top: 166px; */
+    /* or 80px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 6;
+    margin-left: 42%;
+    transform: translatey(20%);
+    color: #FFFFFF;
+}
+.section__one--text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    width: 500.31px;
+    height: 400px;
+    letter-spacing: -3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 106.491px;
+    line-height: 80px;
+}
+.yellow {
+    color: #FFEE2E
+}
+.section__one--link {
+    display: block;
+    width: 298px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: #F9804B;
+    margin-left: 42%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 22px */
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 30px;
+    color: #FFFFFF;
 }
