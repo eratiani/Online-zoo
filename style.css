@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
 }
 .header__logo {
     cursor: pointer;
