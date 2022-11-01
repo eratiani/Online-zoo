@@ -281,6 +281,7 @@
 }
 .sec__three--card:hover .card__content {
 background-color: rgb(176, 171, 171);
+transform: translatey(-350%);
 transition: 0.8s;
 }
 .sec__three--card:hover .card--img {

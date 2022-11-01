@@ -41,3 +41,6 @@ navFooter.addEventListener("click", (e) => {
     }
     e.target.classList .add("highlight")
 })
+
+
+
