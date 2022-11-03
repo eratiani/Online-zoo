@@ -218,6 +218,47 @@
     margin-bottom: 60px;
 
 }
+.panda__container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.panda__container {
+    width: 532px;
+    height: 246px;
+    display: flex;
+    margin: auto;
+}
+.panda__container__p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 58px;
+    /* identical to box height, or 58px */
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    color: #000000;
+}
+.panda__container__paragraph {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* or 22px */
+
+text-align: center;
+
+color: #333B41;
+}
+.panda__container__x {
+    width: 14px;
+    height: 14px;
+}
 /* //////////////////////////////////// section__two //////////////////////////// */
 
 /* //////////////////////////////////// footer //////////////////////////// */
