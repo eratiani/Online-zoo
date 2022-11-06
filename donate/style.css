@@ -10,6 +10,34 @@
 .highlight {
     color: #F9804B !important;
 }
+
+.radio__active:after {
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #FE9013 !important;
+    z-index: 5;
+    cursor: pointer;
+}
+.radio__active::before{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    /* top: -2px;
+    left: -1px; */
+    transform: translate(-25%, -30%);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #FE9013 !important;
+    z-index: 3;
+}
 .container__content{
     width: 1160px;
     max-width: 100%;
@@ -256,8 +284,187 @@ text-align: center;
 color: #333B41;
 }
 .panda__container__x {
+    display: flex;
+    align-items: center;
+    margin-right: 64px;
+    margin-left: 11px;
+}
+.panda__container__x--img {
     width: 14px;
     height: 14px;
+}
+.amount__container--title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 22px */
+    margin-top: 48px;
+    margin-bottom: 25px;
+    margin-left: 4px;
+    color: #000000;
+
+}
+.section__two__radio--container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.section__two__radio {
+    display: flex;
+    flex-direction: column;
+    
+}
+.section__two__radio>input {
+    width: 8px;
+    height: 8px;
+    z-index: 4;
+    margin-left: 26px;
+    margin-right: 30px;
+}
+.section__two__radio>input:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    position: relative;
+    top: -2px;
+    left: -1px;
+    background-color: #FFEE2E;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid transparent;
+    z-index: 5;
+    cursor: pointer;
+}
+.section__two__radio>label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    margin-top: 21px;
+    /* or 36px */
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    color: #333B41;
+    
+}
+.section__two--line {
+    width: 915px;
+    height: 2px;
+    z-index: 4;
+    background: #72828E;
+    border-radius: 2px;
+    position: absolute;
+    top: 6%;
+    left: 3%;
+}
+.section__two--blackOverlay{
+    position: absolute;
+    display: inline-block;
+    width: 976px;
+    height: 27px;
+    top: -9px;
+    z-index: 1;
+    left: 0;
+    background: #404950;
+    border-radius: 2px;
+}
+.section__two__amount--container {
+    position: relative;
+    margin-bottom: 25px;
+}
+.section__two__input--contaner {
+    width: 268px;
+    margin: auto;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+.dollar {
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+.section__two__amount--container>input {
+    width: 268px;
+    height: 54px;
+    border: 1px solid #929699;
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 16px 10px 9px;
+}
+.section__two__amount--container>input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 22px */
+
+
+    color: #929699;
+}
+.section__two__input__radio--container{
+    margin-bottom: 31px;
+}
+.section__two__input__radio--container>input {
+    background-color: transparent;
+}
+#Monthly {
+    margin-left: 28px;
+}
+.Monthly1 {
+    margin-right: 50px;
+}
+.section__two__input__radio--container>label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 22px */
+
+
+    color: #333B41;
+}
+.section__two__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Width:  298px;
+    text-decoration: none;
+    Height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 22px */
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+
+}
+.section__two__paragraph--last{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    color: #333B41;
+
 }
 /* //////////////////////////////////// section__two //////////////////////////// */
 
