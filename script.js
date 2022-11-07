@@ -1,11 +1,11 @@
 const logoHeader = document.querySelectorAll(".header__logo");
 const navHeader = document.querySelector(".header__navigation--ul");
 const navFooter = document.querySelector(".footer__navigation--ul");
+//////////////////////// week1-2 ///////////////////////////////
 
 navHeader.addEventListener("click", (e) => {
     e.preventDefault();
     for (const iterator of e.currentTarget.children) {
-        console.log(iterator);
         iterator.children[0].classList .contains("highlight")? iterator.children[0].classList.remove("highlight"):"do nothing"
     }
     if (e.target.textContent =="About") {
@@ -27,7 +27,6 @@ logoHeader.forEach((e) => {
 navFooter.addEventListener("click", (e) => {
     e.preventDefault();
     for (const iterator of e.currentTarget.children) {
-        console.log(iterator);
         iterator.children[0].classList .contains("highlight")? iterator.children[0].classList.remove("highlight"):"do nothing"
     }
     if (e.target.textContent =="About") {
@@ -41,6 +40,7 @@ navFooter.addEventListener("click", (e) => {
     }
     e.target.classList .add("highlight")
 })
+//////////////////////// week1-2 ///////////////////////////////
 
 
 
