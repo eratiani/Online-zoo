@@ -49,7 +49,7 @@ navFooter.addEventListener("click", (e) => {
         iterator.children[0].classList .contains("highlight")? iterator.children[0].classList.remove("highlight"):"do nothing"
     }
     if (e.target.textContent =="About") {
-        window.location.href ="./index.html"
+        window.location.href ="../index.html"
     } else if (e.target.textContent =="Map") {
         
     } else if (e.target.textContent == "Zoos") {
