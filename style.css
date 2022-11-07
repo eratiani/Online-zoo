@@ -5,12 +5,20 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
 }
+/* //////////////////////////////////// global //////////////////////////// */
+
 .container__content{
     width: 1160px;
     max-width: 100%;
     margin: auto;
     overflow: hidden;
 }
+.highlight {
+    color: #F9804B !important;
+}
+/* //////////////////////////////////// global //////////////////////////// */
+
+/* //////////////////////////////////// header //////////////////////////// */
 
 .header {
     height: 80px;
@@ -21,7 +29,7 @@
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 10;
 }
 .header__logo {
     cursor: pointer;
@@ -101,6 +109,10 @@
     display: flex;
     align-items: center;
 }
+/* //////////////////////////////////// header //////////////////////////// */
+
+/* //////////////////////////////////// section__one //////////////////////////// */
+
 .section__one {
     height: 780px;
     background-image: url(assets/images/Giant\ Panda.png);
@@ -150,9 +162,7 @@
     font-size: 106.491px;
     line-height: 80px;
 }
-.highlight {
-    color: #F9804B !important;
-}
+
 .yellow {
     color: #FFEE2E
 }
@@ -180,6 +190,10 @@
     background-color: #d85218;
     transition: 0.8s;
 }
+/* //////////////////////////////////// section__one //////////////////////////// */
+
+/* //////////////////////////////////// section__two //////////////////////////// */
+
 .section__two--Fwidth {
     width: 100%;
     position: relative;
@@ -256,6 +270,11 @@
 .section__two__img__relative--container>img{
     max-width: 100%;
 }
+
+/* //////////////////////////////////// section__two //////////////////////////// */
+
+/* //////////////////////////////////// section__three //////////////////////////// */
+
 .section__three--fWidth {
     width: 100%;
     height: 1196px;
@@ -281,6 +300,7 @@
 }
 .sec__three--card:hover .card__content {
 background-color: rgb(176, 171, 171);
+transform: translatey(-350%);
 transition: 0.8s;
 }
 .sec__three--card:hover .card--img {
@@ -423,6 +443,11 @@ color: #000000;
     background-color: #d27811;
     transition: 0.8s;
 }
+
+/* //////////////////////////////////// section__three //////////////////////////// */
+
+/* //////////////////////////////////// section__four //////////////////////////// */
+
 .section__four--fWidth {
     height: 1004px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -573,6 +598,11 @@ color: #000000;
 .section__four--link:hover{
     background: linear-gradient(113.96deg, #b9613c 1.49%, #ca730f 101.44%);
 }
+
+/* //////////////////////////////////// section__four //////////////////////////// */
+
+/* //////////////////////////////////// section__five //////////////////////////// */
+
 .section__five--fWidth {
     /* height: 919; */
     padding-top:140px ;
@@ -738,6 +768,11 @@ color: #333B41;
     /* height:100%; */
     max-width: 100%;
 }
+
+/* //////////////////////////////////// section__five //////////////////////////// */
+
+/* //////////////////////////////////// footer //////////////////////////// */
+
 .footer__fWidth {
     height: 443px;
     background: #111115;
@@ -911,3 +946,4 @@ color: #333B41;
 .footer__author--par1 {
     margin-bottom: 10px;
 }
+/* //////////////////////////////////// footer //////////////////////////// */
