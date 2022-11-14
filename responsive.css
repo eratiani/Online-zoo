@@ -1,0 +1,209 @@
+@media only screen and (max-width: 1500px) {
+  .section__two__img__relative--container {
+    width: 100px;
+    right: 0;
+    opacity: 0.4;
+  }
+  .sec__three--button--container {
+    width: 100%;
+    top: 47%;
+    transform: translateY(-50%);
+    left: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .sec__three{
+    width: 100%;
+
+  }
+  .sec__three--cards {
+    width: 94%;
+    margin: auto;
+    gap: 92px 30px;
+  }
+  .card__img--container{
+    width: 100%;
+  }
+  .sec__three--card{
+    width: 294px;
+    height: auto;
+  }
+  .card__content {
+    width: 296px;
+  }
+}
+/* /////////////////// 1000px 0/////////////// */
+@media only screen and (max-width: 1000px) {
+  .container__content{
+    width: 94%;
+  }
+  .header__navigation--link {
+    margin-right: 48px;
+  }
+  .section__one{
+    height: 584px;
+    background-position-x: -98px;
+  }
+  .circle__block {
+    width: 367px;
+    height: 367px;
+    top: 69px;
+    left: auto;
+    right: 177px;
+  }
+  .section__one--text {
+    font-size: 85px;
+    line-height: 64px;
+    letter-spacing: -6px;
+  }
+  .section__one--link{
+    margin-bottom: 21px;
+  }
+  .section__two--Fwidth{
+    padding-bottom: 63px;
+  }
+  .sec__two{
+    margin-top: 100px;
+  }
+  .section__two--img__container {
+    width: 48.4042553%;
+  }
+  .section__two--img__container>img{
+    width: 100%;
+    max-width: 100%;
+    height: 408px;
+    margin-top: 10px;
+  }
+  .section__two--content{
+    width: 48.4042553%;
+  }
+  .section__two--title--one {
+    font-size: 47px;
+  }
+  .section__three--fWidth{
+    padding-top:77px;
+    height: auto;
+  }
+  .sec__three--cards{
+    width: 100%;
+  }
+  .card__img--container {
+    height: auto;
+  }
+  .sec__three--button--container{
+     top: 42%;
+  }
+  .sec__three--button--container{
+    padding: 0;
+    justify-content: center;
+  }
+  .section_three--button--left{
+    margin-right: 17%;
+  }
+  .section__three--link{
+    margin-top: 72px;
+    margin-bottom: 42px;
+  }
+  .sec__three__right--img--container {
+    padding: 20px;
+    width: 287px;
+    height: auto;
+    bottom: -26px;
+    right: -23px;
+  }
+  .sec__three__right--img--container>img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .sec__three__left--img--container {
+    width: 134px;
+    height: 195px;
+  }
+  .sec__three__left--img--container>img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .section__four--fWidth{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .sec-four{
+    height: auto;
+    padding-left: 49px;
+  }
+  .section__four__content--one--title--main {
+    margin-top: 29px;
+    margin-bottom: 23px;
+    padding-right: 42px;
+    
+  }
+  .section__four__content--one--title--secondary {
+    margin-bottom: 16px;
+  }
+  .section__four__content--one--paragraph--two{
+    margin-bottom: 35px;
+  }
+  .section__four__content--two--title{
+    padding-right: 5%;
+  }
+  .section__four__content--two--instructions{
+    margin-left: 40px;
+  }
+  .section__four--link{
+    margin-top: 71px;
+    margin-bottom: 47px;
+  }
+  .section__five--fWidth{
+    padding-top: 100px;
+    padding-bottom: 141px;
+  }
+  .section__five--title{
+    margin-bottom: 34px;
+  }
+  .section__five--content--card{
+    width: 293px;
+  }
+  .section__five--scroller {
+    width: 41.48936%;
+  }
+  .section__five--scroller--bar{
+    width: 70px;
+  }
+  .section__five--link{
+    margin-top: 46px;
+  }
+  .footer__form{
+    margin-top: 6px;
+    margin-right: 28px;
+  }
+  .footer--link {
+    margin-bottom: 42px;
+  }
+  .footer__navigation--ul{
+    margin-top: 77px;
+    margin-left: 178px;
+    margin-right: -8px;
+  }
+  .section__five__pos--img--container{
+    opacity: 0.5;
+    animation-name: dissapear;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .section__two__img__relative--container{
+    animation-name: dissapear;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes dissapear {
+    0%   {transform: translateX(-1%);}
+    /* 10%   {transform: translateX(-25%);}
+    25%  {transform: translateX(-50%);}
+    50%  {transform: translateX(-75%);}
+    75%  {transform: translateX(-100%);} */
+    100% {transform: translateX(-1000%);}
+  }
+}
