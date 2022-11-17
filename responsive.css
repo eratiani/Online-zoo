@@ -116,12 +116,16 @@
     max-width: 100%;
   }
   .sec__three__left--img--container {
-    width: 134px;
-    height: 195px;
+    background-image: url(./assets/images/palm_fot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 386px;
+    height: 202px;
+    bottom: 0px;
+    left: -177px;
   }
   .sec__three__left--img--container>img {
-    width: 100%;
-    max-width: 100%;
+   display: none;
   }
   .section__four--fWidth{
     height: auto;
@@ -186,11 +190,16 @@
     margin-right: -8px;
   }
   .section__five__pos--img--container{
-    opacity: 0.5;
-    animation-name: dissapear;
-    animation-duration: 8s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    background-image: url(./assets/images/leav_fot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 316.98px;
+    height: 235.62px;
+    bottom: 4px;
+    right: -116px;
+  }
+  .section__five__pos--img--container>img{
+    display: none;
   }
   .section__two__img__relative--container{
     animation-name: dissapear;
