@@ -412,4 +412,79 @@
   .sec__three__right--img--container{
     width: 227px;
   }
+  .sec-four {
+    width: 100%;
+    padding: 0 3%;
+  }
+
+  .section__four--fWidth {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+ 
+  .section__four__content--one--title--main{
+    font-size: 42px;
+    line-height: 50px;
+    margin-top: 8px;
+    margin-bottom: 19px;
+    padding-right: 4px;
+/* or 50px */
+  }
+  .section__four__content--one--title--secondary {
+    font-size: 21px;
+    line-height: 26px;  
+    margin-bottom: 20px;
+  }
+  .section__four__content--one--paragraph--two {
+    width: auto;
+  }
+  .section__four__content--one--paragraph--two{
+    margin-bottom: 30px;
+  }
+  .section__four__content--two--instruction{
+    position: relative;
+  }
+  .section__four__content--two--title{
+    padding-right: 0;
+    margin-bottom: 21px;
+  }
+  .img_arrow{
+    position: absolute;
+    display: block;
+    width: 88px !important;
+    height: 33px !important;
+    top: -7%;
+    right: -35%;
+    z-index: 3;
+  }
+  .img_arrow>img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .section__four--link{
+    margin-top: 41px;
+    margin-bottom: 60px;
+    margin-left: 25%;
+  }
+  .section__five--fWidth{
+    padding-top: 59px;
+  }
+  .section__five--content--cards{
+    grid-template-columns: repeat(auto-fill, minmax(min(100%,100%), 1fr));
+    gap: 15px;
+    height: 357px;
+  }
+  .section__five--content--card{
+    width: 99%;
+    height: 105px;
+    padding: 15px 30px 8px 12px;
+  }
+  .section__five--content--card--description{
+    height: 38px;
+    overflow-y: scroll;
+  }
+  .section__five--scroller{
+    display: none;
+  }
 }

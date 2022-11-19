@@ -601,7 +601,13 @@ color: #000000;
 .section__four--link:hover{
     background: linear-gradient(113.96deg, #b9613c 1.49%, #ca730f 101.44%);
 }
-
+.emerg__btn{
+    border-bottom: 2px solid #FE9013;
+}
+.img_arrow{
+    display: none;
+    
+}
 /* //////////////////////////////////// section__four //////////////////////////// */
 
 /* //////////////////////////////////// section__five //////////////////////////// */
