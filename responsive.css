@@ -296,3 +296,120 @@
   margin-left: 0px;
 }
 }
+@media only screen and (max-width: 640px) {
+  .header__logo--text{
+    font-size: 12.2899px;
+    line-height: 12px;
+    border: transparent;
+    width: 49.93px;
+    height: 29.03px;
+    padding: 0;
+  }
+  .bamboo{
+    height: 13.56px;
+    width: 4.35px;
+    left: 16.5%;
+  }
+  .container__content {
+    width: 93.7390625%;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .header {
+    height: 34px;
+  }
+  .section__one {
+    height: 373px;
+    background-position-x: -64px;
+  }
+  .circle__block{
+    width: 237.6px;
+    height: 237.6px;
+    top: 43px;
+    right: 72px;
+  }
+  .section__one--text{
+    font-size: 54.2894px;
+    line-height: 41px;
+    letter-spacing: 3px;
+  }
+  .section__one--link{
+    margin-right: 89%;
+    margin-bottom: 40px;
+  }
+  .section__one--text--wrapper{
+    margin-top: 10px;
+    margin-left: 55%;
+  }
+  .section__two--Fwidth {
+    padding-top: 60px;
+    padding-bottom: 77px;
+  }
+  .section__two--content {
+    width: 82.51375229204867%;
+  }
+  .section__two__img__relative--container{
+    animation: none;
+    width: 231px;
+    height: 476px;
+    background-image: url(assets/images/flower_fotosec1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    transform: translateX(45%);
+  }
+  .section__two__img__relative--container>img{
+    display: none;
+  }
+  .section__two--paragraph--one{
+    margin-bottom: 30px;
+  }
+  .section__two--title--Two {
+    margin-bottom: 20px;
+  }
+  .section__three--fWidth{
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+  .sec__three--cards {
+    height: 758px;
+    gap: 90px 30px;
+    grid-template-columns: repeat(auto-fill, minmax(min(282px,100%), 1fr));
+    overflow: hidden;
+  }
+  .card__content{
+    width: 100%;
+    height: auto;
+    padding: 5px 9.11px 8.13px 12.47px;
+  }
+  .card__content--text--title{
+    font-size: 12.4695px;
+    line-height: 17px;
+  }
+  .card__content--text-description {
+    font-size: 11.6901px;
+    line-height: 14px;
+  }
+  .card__content--img--container{
+    width: 25.72px;
+    height: 28.84px;
+  }
+  .sec__three--button--container{
+    top: 37%;
+  }
+  .section_three--button--left{
+    margin-right: 5%;
+  }
+  .section__three--link{
+    margin-top: 60px;
+  }
+  .sec__three__left--img--container{
+    left: -233px;
+  }
+  .sec__three__right--img--container{
+    width: 227px;
+  }
+}
