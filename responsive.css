@@ -480,6 +480,7 @@
     height: 105px;
     padding: 15px 30px 8px 12px;
   }
+  .section__five--content--card::after
   .section__five--content--card--description{
     height: 38px;
     overflow-y: scroll;
