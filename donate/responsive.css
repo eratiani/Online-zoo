@@ -265,9 +265,18 @@
         margin-right: 14px;
         margin-left: -15px;
     }
+    .section__two__text--paragraph{
+        margin-bottom: 70px;
+    }
     .panda__container__img--wrapper>img{
         width: 160px;
         height: auto;
+    }
+    .section__two__price--title{
+        margin-bottom: 30px;
+    }
+    .section__two__donation--container--secondary--title{
+        margin-bottom: -64px;
     }
     .section__two__link{
         width: auto;
