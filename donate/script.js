@@ -70,7 +70,6 @@ function navFunc(){
         e.target.classList .add("highlight")
     });
 };
-console.log(window.innerWidth);
 radioBtnFunc();
 navFunc();
 //////////////////////// week1-2 ///////////////////////////////
