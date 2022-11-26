@@ -623,9 +623,12 @@
   .sec__three--card{
     width: 285px;
     height: 332px;
+    margin: auto;
   }
   
-  
+  .sec__three--button--container {
+    display: none;
+  }
   
   .section__three--link{
     margin-top: 18px;
