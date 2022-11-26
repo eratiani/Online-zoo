@@ -23,11 +23,56 @@ function radioBtnFunc() {
                 }
                 
             }
+            const radioVal = e.target.nextElementSibling.textContent.match(/\d/g).join("")
+            document.querySelector(".section__two__amount").value= radioVal
             e.target.classList.add("radio__active")
             e.target.nextElementSibling.classList.add("highlight")
         }
     });
 };
+function inputFunc() {
+    function elementFunc(e, input) {
+        
+        e.forEach((element) => {
+            element.children[0].classList.contains("radio__active") ? element.children[0].classList.remove("radio__active") : "do nothing";
+            element.children[1].classList.contains("highlight") ? element.children[1].classList.remove("highlight") : "do nothing";
+        });
+        const inputEl = document.getElementById(`${Number(input.value)}`)
+        if (inputEl !== null) {
+            inputEl.classList.add("radio__active");
+            inputEl.parentElement.children[1].classList.add("highlight");
+        }
+    }
+    const input = document.querySelector(".section__two__amount");
+    input.addEventListener("input", () => {
+        const element = document.querySelectorAll(".section__two__radio");
+        if (Number(input.value) >= 10000 ) {
+            input.value = 0;
+        } else if (Number(input.value) === 5000) {
+            elementFunc(element, input);
+            
+        } else if (Number(input.value) === 2000) {
+            elementFunc(element, input);
+        } else if (Number(input.value) === 1000) {
+            elementFunc(element, input);
+        } else if (Number(input.value) === 500) {
+            elementFunc(element, input);
+        } else if (Number(input.value) === 250) {
+            elementFunc(element, input);
+        } else if (Number(input.value) === 100) {
+            elementFunc(element, input);
+        } else if (Number(input.value) === 50) {
+            elementFunc(element, input);
+        } else {
+            elementFunc(element, input);
+        }
+    })
+}
+function highlightRemFunc(e) {
+    for (const iterator of e.currentTarget.children) {
+        iterator.children[0].classList .contains("highlight")? iterator.children[0].classList.remove("highlight"):"do nothing"
+    }
+}
 function navFunc(){
     navHeader.addEventListener("click", (e) => {
         e.preventDefault();
@@ -55,9 +100,7 @@ function navFunc(){
     });
     navFooter.addEventListener("click", (e) => {
         e.preventDefault();
-        for (const iterator of e.currentTarget.children) {
-            iterator.children[0].classList .contains("highlight")? iterator.children[0].classList.remove("highlight"):"do nothing"
-        }
+        highlightRemFunc(e);
         if (e.target.textContent =="About") {
             window.location.href ="../index.html"
         } else if (e.target.textContent =="Map") {
@@ -72,4 +115,5 @@ function navFunc(){
 };
 radioBtnFunc();
 navFunc();
+inputFunc();
 //////////////////////// week1-2 ///////////////////////////////
