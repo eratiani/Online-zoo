@@ -12,7 +12,21 @@
 .highlight {
     color: #F9804B !important;
 }
-
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+.overly--black{
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
 .radio__active:after {
     border-radius: 50%;
     position: absolute;
@@ -112,7 +126,9 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
+    white-space: nowrap;
     font-size: 16px;
+    margin-left: 48.5%;
     line-height: 22px;
     /* or 22px */
     text-decoration: none;
