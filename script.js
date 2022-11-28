@@ -57,10 +57,12 @@ function navFunction(){
 function burgerFun() {
     burgerIcon.addEventListener("click", () => {
         nvigationHead.style.display = "block";
-        overly.classList.remove("none")
-        overly.classList.add("block")
-        closeBtnBurger.classList.remove("none")
-        closeBtnBurger.classList.add("block")
+        overly.classList.remove("none");
+        overly.classList.add("block");
+        console.log(closeBtnBurger);
+        closeBtnBurger.classList.remove("none");
+        closeBtnBurger.classList.add("block");
+        console.log(closeBtnBurger);
     });
     overly.addEventListener("click", () => {
         nvigationHead.style.display = "none";

@@ -61,7 +61,28 @@
     }
     .header__content{
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
+    }
+    .header__logo--two{
+      display: block !important;
+    }
+    .header__logo--text--two{
+      width: 46px;
+      height: 29px;
+      color: #FFFFFF;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12.2899px;
+      line-height: 15px;
+      /* margin-left: -35%; */
+      margin-right: 63px;
+      /* or 23px */
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      text-align: center;
+      border: none; 
     }
     .nav__logo__container {
       display: flex;
