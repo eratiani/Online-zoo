@@ -646,6 +646,11 @@
   margin-bottom: -60px;
 }
 }
+@media only screen and (max-width: 639px) {
+  .sec__three--button--container{
+    display: none;
+  }
+}
 @media only screen and (max-width: 376px) {
   .section__one {
     height: 220px;
