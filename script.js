@@ -75,9 +75,53 @@ function burgerFun() {
         overly.classList.add("none")
     })
 }
+function carousel() {
+    const containerCarousel = document.querySelector(".sec__three--cards")
+    const rightBtn = document.querySelector(".section_three--button--right");
+    const lefttBtn = document.querySelector(".section_three--button--left");
+    const cardsArray = document.querySelectorAll(".sec__three--card");
+   
+    function clickFunc(e) {
+        rightBtn.removeEventListener("click", clickFunc);
+        const newCards = shuffler(cardsArray);
+        containerCarousel.innerHTML=""
+        newCards.forEach((e)=>{
+            e.style.animationName = "carousel";
+            e.style.animationDuration = "1s";
+            
+            containerCarousel.appendChild(e);
+        });
+        setTimeout(()=>{
+
+            rightBtn.addEventListener("click", clickFunc);
+        },1000);
+    }
+    function clickFuncLeft(e) {
+        lefttBtn.removeEventListener("click", clickFuncLeft);
+        const newCards = shuffler(cardsArray);
+        containerCarousel.innerHTML=""
+        newCards.forEach((e)=>{
+            e.style.animationName = "carousel";
+            e.style.animationDuration = "1s";
+            
+            containerCarousel.appendChild(e);
+        });
+        setTimeout(()=>{
+
+            lefttBtn.addEventListener("click", clickFuncLeft);
+        },1000);
+    }
+    rightBtn.addEventListener("click", clickFunc);
+    lefttBtn.addEventListener("click", clickFuncLeft);
+    function shuffler(nodelist) {
+        const shuffledArr = Array.prototype.slice.call(nodelist, 0);
+        return shuffledArr.sort(() => Math.random() - 0.5);
+    }
+}
 overlyFunc();
 navFunction();
 burgerFun();
+carousel();
 //////////////////////// week1-2 ///////////////////////////////
 
 

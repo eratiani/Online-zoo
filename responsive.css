@@ -11,6 +11,7 @@
     left: 0;
     padding-left: 2%;
     padding-right: 2%;
+    z-index: 5;
   }
   .sec__three{
     width: 100%;
@@ -376,6 +377,9 @@
 .footer__navigation--ul {
   margin-left: 0px;
 }
+.sec__three--button--container{
+  display: none;
+}
 }
 @media only screen and (max-width: 640px) {
   .header__logo--text{
@@ -479,6 +483,7 @@
     height: 28.84px;
   }
   .sec__three--button--container{
+    display: flex;
     top: 37%;
   }
   .section_three--button--left{

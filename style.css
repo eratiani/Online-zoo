@@ -5,6 +5,10 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 400;
 }
+@keyframes carousel {
+    0% {transform: translate(13%);}
+    100% {transform: translate(0);}
+  }
 /* //////////////////////////////////// global //////////////////////////// */
 
 .container__content{
