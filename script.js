@@ -9,9 +9,9 @@ const closeBtnBurger = document.querySelector(".img__x--continer");
 //////////////////////// week1-2 ///////////////////////////////
 overly.style.height = `${body.getBoundingClientRect().height}px`;
 
-function overlyFunc() {
+function overlyFunc(element) {
     window.addEventListener("resize", () => {
-        overly.style.height = `${body.getBoundingClientRect().height}px`;
+        element.style.height = `${body.getBoundingClientRect().height}px`;
     });
 }
 function navFunction(){
@@ -118,7 +118,67 @@ function carousel() {
         return shuffledArr.sort(() => Math.random() - 0.5);
     }
 }
-overlyFunc();
+function popup() {
+    const container = document.querySelector(".section__five--content--cards");
+    const overlay = document.querySelector(".section__five--overlay--dark");
+    const popup = document.querySelector(".section__five--popup");
+    
+    overlay.style.height = `${body.getBoundingClientRect().height }px`;
+    console.log(overlay.getBoundingClientRect().height);
+    overlyFunc(overlay);
+    container.addEventListener("click", (e)=>{
+        popup.classList.remove("none");
+        popup.classList.add("block");
+        popup.innerHTML = `
+        <div class="section__five--content--card--two">
+                <div class="section__five--content--card--img--x">
+                                <img src="assets/images/x_icon2.png" alt="x" class="section__five--content--card--img--x--img">
+                    </div>
+                    <div class="section__five--content--card--img--text--two">
+                        <div class="section__five--content--card--img--wrapper--two">
+                            <img src="assets/images/user_icon.png" alt="picture" class="section__five--content--card--img--two">
+                        </div>
+                        <div class="section__five--content--card--text--two">
+                            <h4 class="section__five--content--card--name--two">Michael John </h4>
+                            <p class="section__five--content--card--location--two">Local Austria <span class="section__five--content--card--location--dot--two">
+                                &#183;
+                            </span> <span class="section__five--content--card--location--date--two">Today</span></p>
+                        </div>
+                    </div>
+                    <p class="section__five--content--card--description--two">The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.
+                        </p>
+                </div>
+        `
+        overlay.classList.remove("none");
+        overlay.classList.add("block");
+        const closeBtn = document.querySelector(".section__five--content--card--img--x");
+        closeBtn.addEventListener("click", ()=>{
+            overlay.classList.remove("block");
+            overlay.classList.add("none");
+            popup.classList.remove("block");
+            popup.classList.add("none");
+        });
+    });
+    overlay.addEventListener("click",()=>{
+        overlay.classList.remove("block");
+        overlay.classList.add("none");
+        popup.classList.remove("block");
+        popup.classList.add("none");
+    });
+    
+}
+if(body.getBoundingClientRect().width<=640) {
+    popup();
+
+};
+window.addEventListener("resize", () => {
+    if(body.getBoundingClientRect().width<=640) {
+        popup();
+
+    };
+});
+overlyFunc(overly);
 navFunction();
 burgerFun();
 carousel();
