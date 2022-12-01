@@ -10,7 +10,9 @@
     100% {transform: translate(0);}
   }
 /* //////////////////////////////////// global //////////////////////////// */
-
+.footer__logo--span {
+    padding-left: 5px;
+}
 .container__content{
     width: 1160px;
     max-width: 100%;

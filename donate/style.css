@@ -9,7 +9,9 @@
 .burger__container{
     display: none;
 }
-
+.footer__logo--span {
+    margin-left: 5px;
+}
 .highlight {
     color: #F9804B !important;
 }
@@ -109,8 +111,13 @@
     list-style: none;
     display: flex;
 }
+.header__navigation--li{
+    display: flex;
+    align-items: center;
+}
 .header__navigation--link {
     display: block;
+    white-space: nowrap;
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Roboto';
@@ -119,6 +126,7 @@
     font-size: 16px;
     line-height: 22px;
     margin-right: 58px;
+    
     text-align: left;
     /* letter-spacing: 0.8px; */
 }
