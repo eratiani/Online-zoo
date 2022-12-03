@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1650px) {
+  .sec__three--button--container{
+    width: 1322px;
+    left: 8.7%;
+ }
+
+}
 @media only screen and (max-width: 1500px) {
   .section__two__img__relative--container {
     width: 100px;

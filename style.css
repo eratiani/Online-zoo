@@ -427,12 +427,13 @@ color: #000000;
     z-index: 5;
 }
 .sec__three--button--container {
-    width: 1322px;
+    width: 80%;
+    left: 10%;
     position: absolute;
     top: 41%;
     display: flex;
     justify-content: space-between;
-    left: 8.7%;
+  
 
 }
 .section_three--button--left{
