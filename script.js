@@ -178,10 +178,46 @@ window.addEventListener("resize", () => {
 
     };
 });
+function rangeSlider() {
+    const rangeSlider = document.querySelector(".slider");
+    let i = 0;
+    rangeSlider.addEventListener("input", (e)=>{
+            i++
+                    const postArr = document.querySelectorAll(".section__five--content--card");
+                    const newArr = Array.from(postArr);
+            
+                orderer(newArr, e.currentTarget.value)
+
+                newArr.forEach((e)=>{
+                    e.style.animation = "carousel 1s infinite";
+                    e.style.animationPlayState = "running";
+                    setTimeout(() => {
+                        e.style.animationPlayState = "paused";
+                    }, 1001);
+                });
+                // let first = newArr.shift();
+                // newArr.push(first)
+                // console.log(newArr);
+        });
+        function orderer(array, eventVal){
+            array.forEach((e, i)=>{
+                if (i<eventVal) {
+                    
+                    e.style.order=`${i+1}`
+                } else {
+                    e.style.order=`${1-10}`
+                }
+                
+            });
+            
+        }
+    }
+
 overlyFunc(overly);
 navFunction();
 burgerFun();
 carousel();
+rangeSlider();
 //////////////////////// week1-2 ///////////////////////////////
 
 

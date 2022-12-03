@@ -100,8 +100,10 @@ function navFunc(){
         } else if (e.target.textContent == "Zoos") {
             e.target.classList .add("highlight")
         } else if (e.target.textContent == "Donate") {
-            e.target.classList .add("highlight")
             window.location.href ="index.html"
+            e.target.classList .add("highlight")
+        } else if (e.target.textContent == "Contact us") {
+            e.target.classList .add("highlight")
         }
         
     });
